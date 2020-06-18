@@ -1,0 +1,118 @@
+.story {
+  width: 100%;
+  background-color: inherit;
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 2px solid transparent;
+
+  &.see {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    background-color: #08a045; 
+  }
+
+  &.no-see {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    background-color: #6e7e85;    
+  }
+
+  &.top {
+    border-top: 2px solid black;
+
+    &-of-tallest {
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url(../../assets/coder-foundry.png);      
+    }
+  }
+
+  &:not(.clear) {
+    &.empty {
+      &:hover {
+        background-color: #bdf291;
+        border: 2px dashed #08a045
+      }
+      &:hover ~ .empty {
+        background-color: #bdf291;
+        border: 2px dashed #08a045
+      }
+    }
+    &:not(.empty) {
+      &:hover {
+        background-color: #ffadad;
+        border: 2px dashed #eb5160;      
+      }
+    }
+  }
+
+  &:not(.empty):not(.clear) {
+    &:hover > * {
+      display: none;
+    }
+  }
+
+  &:not(.empty):not(.clear):hover + .story:not(.empty) {
+    border-top: 2px solid #000000 !important;
+  }
+
+  &.clear.empty:hover + .story:not(.empty) {
+    border-top: 2px solid #000000 !important;
+  }
+
+  &:hover ~ .story:not(.empty) {
+    border: 2px solid transparent !important;
+    border-left: 2px solid black !important;
+    border-right: 2px solid black !important;
+
+    & > * {
+      display: inline !important;
+    }
+
+    &.see {
+      background-color: #08a045 !important;
+    }
+
+    &.no-see {
+      background-color: #6e7e85 !important;
+    }
+  }
+
+  &:hover ~ .top-of-tallest {
+    background-image: url(../../assets/coder-foundry.png) !important;
+  }
+
+}
+
+.building:hover {
+  .story {
+    &:not(.empty):not(.clear) {
+      background-color: #ffadad;
+      border: 2px dashed #eb5160;
+    }
+
+    &:not(.empty):not(.clear) > * {
+      display: none;
+    }
+
+    &.top-of-tallest:not(.clear) {
+      background-image: none;
+    }
+  }
+}
+
+.window {
+  flex: 1;
+  height: 60%;
+  margin: 0 7%;
+  background-color: #f4e285;
+}
+
+@media only screen and (max-width: 1000px) {
+  .window {
+    height: 0;
+  }
+}

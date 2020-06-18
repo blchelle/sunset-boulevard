@@ -1,0 +1,8 @@
+.city {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 85vw;
+  height: 70vh;
+  padding-right: 2rem;
+}
