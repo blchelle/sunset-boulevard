@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import Story from '../story/story.component'
 import './building.styles.css'
 
