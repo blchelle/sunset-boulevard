@@ -22,7 +22,7 @@ export default function Welcome({clickHandler}) {
       <p className="description">
         Welcome to sunset boulevard! Where the only way you can see the sunset is by having no taller buildings to the west. 
         Luckily, Coder Foundry has an agreement with the city that always gives them the top floor of the tallest building
-        so that Bobby and Kevin can watch the sun set every night.
+        so that Bobby and Kevin can watch the sun set every night. <br /> Note: If you're on mobile, try tapping the buildings to change their heights
       </p>
       <ColorButton variant="contained" color="primary" endIcon={<Check />} onClick={clickHandler}>
         Continue
