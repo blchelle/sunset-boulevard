@@ -9,4 +9,20 @@
 
 body {
   position: relative;
+  background: linear-gradient(-45deg, #68228b, #fd5e53, #ffb90f, #87ceeb);
+  background-position: 100% 100%;
+  background-size: 400% 400%;
+  animation: sky 60s ease;
+}
+
+@keyframes sky {
+  0% {
+		background-position: 0% 0%;
+	}
+	50% {
+		background-position: 50% 50%;
+	}
+	100% {
+		background-position: 100% 100%;
+	}
 }

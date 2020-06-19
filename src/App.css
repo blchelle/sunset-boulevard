@@ -4,39 +4,22 @@
   align-items: flex-end;
   justify-content: flex-end;
   position: relative;
-  max-height: 100vh;
-  background: linear-gradient(#ffa951, #e54b4b), url(./assets/landscape.jpg);
+  height: 100vh;
 }
-
-/* @keyframes sky {
-  50%{
-    background: ##ffd700dd url(./assets/landscape.jpg);
-  }
-  65%{
-    background-color: ##ffb90fdd url(./assets/landscape.jpg);
-  }
-  85% {
-    background-color: ##b39800dd url(./assets/landscape.jpg);
-  }
-  100% {
-    background-color: #68228bdd url(./assets/landscape.jpg);
-  }
-} */
 
 .sun {
   position: absolute;
   width: 200px;
   height: 200px;
-  left: -200px;
-  top: -100px;
+  left: 50px;
+  top: 0px;
   border-radius: 50%;
-  background-color: white;
-  animation: sunset 5s forwards
+  background-color: yellow;
+  animation: sunset 60s forwards
 }
 
 @keyframes sunset {
   100% {
-    transform: translateX(500px);
-    
+    transform: translateY(calc(100vh - 200px)) translateX(-250px);
   }
 }

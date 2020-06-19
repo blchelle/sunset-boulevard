@@ -1,5 +1,6 @@
 .building {
   display: flex;
+  z-index: 2;
   flex-direction: column;
   justify-content: flex-end;
   flex: 1;

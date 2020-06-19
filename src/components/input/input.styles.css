@@ -1,0 +1,21 @@
+.input {
+  padding: 1rem;
+  background-color: #000000aa;
+  border-radius: 0 0 20px 20px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  z-index: 3;
+  align-items: center;
+}
+
+.slider {
+  margin-right: 2rem;
+}
+
+#continuous-slider {
+  color: #ddd;
+  width: 200px;
+}
