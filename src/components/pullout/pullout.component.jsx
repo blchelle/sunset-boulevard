@@ -12,6 +12,7 @@ const ColorButton = withStyles((theme) => ({
 		'&:hover': {
 			backgroundColor: orange[700],
 		},
+		fontSize: 14
 	},
 }))(Button);
 
@@ -79,9 +80,6 @@ export default function Pullout() {
 						/>
 					</a>
 				</div>
-				<ColorButton onClick={() => setExpanded(false)}>
-					Close
-				</ColorButton>
 			</div>
 		</div>
 	);

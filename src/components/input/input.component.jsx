@@ -1,7 +1,7 @@
 import React from 'react';
 import { Slider, Typography, Button } from '@material-ui/core';
 import { Shuffle } from '@material-ui/icons';
-import { withStyles } from '@material-ui/core/styles';
+import { withStyles, createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import { orange } from '@material-ui/core/colors';
 import './input.styles.css';
 
@@ -12,6 +12,7 @@ const ColorButton = withStyles((theme) => ({
 		'&:hover': {
 			backgroundColor: orange[700],
 		},
+		fontSize: 14
 	},
 }))(Button);
 
@@ -45,20 +46,30 @@ const PrettoSlider = withStyles({
 	},
 })(Slider);
 
+const theme = createMuiTheme({
+  typography: {
+    // Tell Material-UI what's the font-size on the html element is.
+    htmlFontSize: 10,
+  },
+});
+
 export default function Input({ sliderValue, changeHandler, clickHandler }) {
 	return (
 		<div className='input'>
 			<div className='slider'>
-				<Typography id='continuous-slider' gutterBottom>
-					Number of buildings = <strong>{sliderValue}</strong>
-				</Typography>
-				<PrettoSlider
-					className='slider'
-					defaultValue={10}
-					min={3}
-					max={15}
-					onChange={changeHandler}
-				/>
+				<ThemeProvider theme={theme}>
+					<Typography id='continuous-slider' fontSize="large" gutterBottom>
+						Number of buildings = <strong>{sliderValue}</strong>
+					</Typography>
+					<PrettoSlider
+						className='slider'
+						defaultValue={10}
+						min={3}
+						max={15}
+						onChange={changeHandler}
+					/>
+				</ThemeProvider>
+
 			</div>
 			<ColorButton
 				variant='contained'
