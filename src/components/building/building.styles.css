@@ -1,9 +1,10 @@
 .building {
-  display: flex;
-  z-index: 2;
-  flex-direction: column;
-  justify-content: flex-end;
-  flex: 1;
-  margin-left: 1rem;
-  height: 100%;
+	flex: 1;
+
+	display: flex;
+	flex-direction: column;
+	margin-right: 2rem;
+
+	height: 100%;
+	z-index: 2;
 }

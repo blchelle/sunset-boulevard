@@ -1,8 +1,10 @@
 .city {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  width: 90vw;
-  height: 80vh;
-  padding-right: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+
+	width: 74vw;
+	height: 80vh;
+
+	padding-right: 1rem;
 }

@@ -1,0 +1,166 @@
+.story.blue:not(.empty) {
+	background: url(../../assets/standard-blue-middle.png);
+	background-size: 100% 100%;
+}
+
+.story.blue:not(.empty):last-child {
+	background: url(../../assets/standard-blue-bottom.png);
+	background-size: 100% 100%;
+}
+
+.story.blue.top {
+	background: url(../../assets/standard-blue-roof.png);
+	background-size: 100% 100%;
+}
+
+.story.green:not(.empty) {
+	background: url(../../assets/standard-green-middle.png);
+	background-size: 100% 100%;
+}
+
+.story.green:not(.empty):last-child {
+	background: url(../../assets/standard-green-bottom.png);
+	background-size: 100% 100%;
+}
+
+.story.green.top {
+	background: url(../../assets/standard-green-roof.png);
+	background-size: 100% 100%;
+}
+
+.story.red:not(.empty) {
+	background: url(../../assets/standard-red-middle.png);
+	background-size: 100% 100%;
+}
+
+.story.red:not(.empty):last-child {
+	background: url(../../assets/standard-red-bottom.png);
+	background-size: 100% 100%;
+}
+
+.story.red.top {
+	background: url(../../assets/standard-red-roof.png);
+	background-size: 100% 100%;
+}
+
+.story:not(.empty).part-of-tallest:not(:last-child) {
+	background: url(../../assets/office-cf-middle.png);
+	background-size: 100% 100%;
+}
+
+.story.part-of-tallest:last-child {
+	background: url(../../assets/office-cf-bottom.png);
+	background-size: 100% 100%;
+}
+
+.story:not(.empty).part-of-tallest.top-of-tallest {
+	background: url(../../assets/office-cf-roof.png);
+	background-size: 100% 100%;
+}
+
+.story.no-see {
+	filter: grayscale(1);
+}
+
+/* Hover to delete highlighting */
+.building:hover .story:not(.empty):not(.clear) {
+	background-color: #ffadad;
+	background-image: none;
+	border: 2px dashed #eb5160;
+	filter: none;
+}
+
+/* Selectors for the standard blue building*/
+.story:not(.empty):not(.clear):hover
+	+ .story.blue:not(.empty):not(.part-of-tallest):not(:last-child) {
+	background-image: url(../../assets/standard-blue-roof.png) !important;
+}
+
+.story:hover ~ .story.blue:not(.part-of-tallest):not(.empty) {
+	background-image: url(../../assets/standard-blue-middle.png) !important;
+	border: none !important;
+}
+
+.story:hover ~ .story.blue:not(.empty):last-child {
+	background-image: url(../../assets/standard-blue-bottom.png) !important;
+	border: none !important;
+}
+
+.story:hover ~ .story.blue:not(.empty).top:not(:last-child) {
+	background-image: url(../../assets/standard-blue-roof.png) !important;
+	border: none !important;
+}
+
+/* Selectors for the standard green building*/
+.story:not(.empty):not(.clear):hover
+	+ .story.green:not(.empty):not(.part-of-tallest):not(:last-child) {
+	background-image: url(../../assets/standard-green-roof.png) !important;
+}
+
+.story:hover ~ .story.green:not(.part-of-tallest):not(.empty) {
+	background-image: url(../../assets/standard-green-middle.png) !important;
+	border: none !important;
+}
+
+.story:hover ~ .story.green:not(.empty):last-child {
+	background-image: url(../../assets/standard-green-bottom.png) !important;
+	border: none !important;
+}
+
+.story:hover ~ .story.green:not(.empty).top:not(:last-child) {
+	background-image: url(../../assets/standard-green-roof.png) !important;
+	border: none !important;
+}
+
+/* Selectors for the standard red building*/
+.story:not(.empty):not(.clear):hover
+	+ .story.red:not(.empty):not(.part-of-tallest):not(:last-child) {
+	background-image: url(../../assets/standard-red-roof.png) !important;
+}
+
+.story:hover ~ .story.red:not(.part-of-tallest):not(.empty) {
+	background-image: url(../../assets/standard-red-middle.png) !important;
+	border: none !important;
+}
+
+.story:hover ~ .story.red:not(.empty):last-child {
+	background-image: url(../../assets/standard-red-bottom.png) !important;
+	border: none !important;
+}
+
+.story:hover ~ .story.red:not(.empty).top:not(:last-child) {
+	background-image: url(../../assets/standard-red-roof.png) !important;
+	border: none !important;
+}
+
+/* Selectors for the office building */
+.story:hover ~ .story:not(.empty).part-of-tallest {
+	background-image: url(../../assets/office-cf-middle.png) !important;
+	border: none !important;
+}
+
+.story:hover ~ .story:not(.empty).part-of-tallest:last-child {
+	background-image: url(../../assets/office-cf-bottom.png) !important;
+	border: none !important;
+}
+
+.story:hover
+	~ .story:not(.empty).part-of-tallest.top-of-tallest:not(:last-child) {
+	background-image: url(../../assets/office-cf-roof.png) !important;
+	border: none !important;
+}
+
+.story:hover ~ .story:not(.empty).no-see {
+	filter: grayscale(1) !important;
+}
+
+/* Hover to build highlighting */
+.story.empty:hover {
+	background-color: #bdf291;
+	border: 2px dashed #08a045;
+}
+
+.story.empty:hover ~ .story.empty {
+	background-color: #bdf291;
+	border: 2px dashed #08a045;
+}
