@@ -27,6 +27,4 @@ The output should look something like this:
 ## Graphics/UI
 All the building graphics were designed by Estevan Feliz. Link to his portfolio -> https://estevanfeliz.me/
 
-**NOTE:** be sure to try out the "special" office buildings designed with CoderFoundry & Logitech in mind!
-
-Any feedback or comments feel free to message me on Discord, connect with me on LinkedIn, or simply email me at: brocklchelle@gmail.com
+Any feedback or comments feel free to connect with me on LinkedIn, or simply email me at: brocklchelle@gmail.com
