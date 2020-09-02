@@ -5,6 +5,7 @@ This is the repo for my submission of Coder Foundry’s Sunset Hills Coding Chal
 
 ## Results
 This submission placed second in the challenge and I was very proud of the feedback which the judges gave me.
+
 **Link to the judges reviewing my submission:** https://youtu.be/ZBGi1-1xkQY?t=2495
 
 ## Official Prompt
