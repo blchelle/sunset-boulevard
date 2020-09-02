@@ -3,6 +3,10 @@ This is the repo for my submission of Coder Foundry’s Sunset Hills Coding Chal
 
 **Live Demo:** https://sunset-boulevard.netlify.app/
 
+## Results
+This submission placed second in the challenge and I was very proud of the feedback which the judges gave me.
+**Link to the judges reviewing my submission:** https://youtu.be/ZBGi1-1xkQY?t=2495
+
 ## Official Prompt
 An array of buildings is facing the sun. The
 heights of each building from West to East is
