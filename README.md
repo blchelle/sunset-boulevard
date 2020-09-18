@@ -1,7 +1,8 @@
 # SunsetHills
 This is the repo for my submission of Coder Foundry’s Sunset Hills Coding Challenge.
 
-**Live Demo:** https://sunset-boulevard.netlify.app/
+## Live Site 🌍
+https://www.sunset-boulevard.brockchelle.com
 
 ## Results
 This submission placed second in the challenge and I was very proud of the feedback which the judges gave me.
